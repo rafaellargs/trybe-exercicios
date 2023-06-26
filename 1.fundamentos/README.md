@@ -1,1 +1,2 @@
 ## Fundamentos
+# Estudar para aprender!!
