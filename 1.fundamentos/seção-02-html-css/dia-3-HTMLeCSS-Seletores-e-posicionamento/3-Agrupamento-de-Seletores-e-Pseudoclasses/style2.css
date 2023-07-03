@@ -1,0 +1,54 @@
+div:hover {
+    border: 10px solid black;
+}
+
+h3 {
+    text-align: center;
+}
+
+.primaria {
+    background-color: blue;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: sans-serif, helvetica;
+}
+
+.secundaria {
+    background-color: green;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: sans-serif, helvetica;
+}
+
+.complementar {
+    background-color: purple;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: sans-serif, helvetica;
+}
+
+.escura {
+    background-color: black;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: sans-serif, helvetica;
+}
+
+.clara {
+    background-color: bisque;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: sans-serif, helvetica;
+}
+
+div:nth-of-type(3) h3 {
+    height: 120px;
+}
+
+div:nth-child(odd) h3 {
+    font-style: italic
+}
