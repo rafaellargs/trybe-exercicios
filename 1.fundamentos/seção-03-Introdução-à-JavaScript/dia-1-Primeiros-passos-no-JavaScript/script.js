@@ -107,3 +107,20 @@ switch  (xadrez.toLowerCase()) {
     console.log('Erro, peça inválida!');
 }   
 
+// Exercício 6 
+// Utilize if...else para escrever um código que defina três números em variáveis e retorne true se pelo menos uma das três for par. 
+// Caso contrário, o código deve retornar false.
+// Faça esse exercício utilizando somente um if.
+
+let numb1 = 5;
+let numb2 = 8;
+let numb3 = 9; 
+
+let resultado = false;
+
+if (numb1 %  2 === 0 || numb2 % 2 === 0 || numb3 % 2 === 0) {
+    resultado = true;
+};
+
+console.log(resultado);
+
