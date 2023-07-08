@@ -9,3 +9,12 @@ console.log('Subtração: ' + (num1 - num2));
 console.log('Multiplicação: ' + (num1 * num2));
 console.log('Divisão: ' + (num1 / num2));
 console.log('Módulo: ' + (num1 % num2));
+
+// Exercício 2
+
+let numero1 = 4;
+let numero2 = 45;
+
+if (numero1 > numero2) {
+    console.log(numero1 + ' é maior que ' + numero2);
+}
