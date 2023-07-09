@@ -33,14 +33,14 @@ for(let index = 0; index < groceryList.length; index += 1) {
 // 🚀 Array e loop for
 
 // 1.  Percorra o array imprimindo todos os valores contidos nele com a função console.log().
-// 2.  Some todos os valores contidos no array e imprima o resultado.
+// 2.  Some todos os valores contidos no array e imprima o index.
 // 3.  Calcule e imprima a média aritmética dos valores contidos no array. 
-//     A média aritmética é o resultado da soma de todos os elementos dividido pelo número total de elementos.
+//     A média aritmética é o index da soma de todos os elementos dividido pelo número total de elementos.
 // 4.  Com base no código que acabou de gerar, referente ao cálculo da média aritmética, faça com que: 
 //     caso o valor final seja maior que 20, imprima a mensagem “O valor da média aritmética é maior que 20”; 
 //     e, caso não seja maior que 20, imprima a mensagem “O valor da média aritmética é menor ou igual a 20”.
 // 5.  Utilizando for, descubra o maior valor contido no array e imprima-o.
-// 6.  Descubra quantos valores ímpares existem no array e imprima o resultado. 
+// 6.  Descubra quantos valores ímpares existem no array e imprima o index. 
 //     Caso não exista nenhum, imprima a mensagem: “Nenhum valor ímpar encontrado”.
 
 
@@ -133,7 +133,100 @@ if (result === 0){
     console.log(result);
   };
 
+// // DESAFIOS
+// Desafio fatorial
+// O fatorial é a multiplicação de um número natural pelos seus antecessores, exceto o zero. 
+// Por exemplo:
+// O fatorial é representado pelo sinal !
+// Exemplo de 4 fatorial:
+// 4! = 4 x 3 x 2 x 1 = 24
+// Com base nessas informações, crie um algoritmo que imprima na tela o fatorial de 10.
 
+let fatorial = 1;
 
+for (let index = 10; index > 0; index -= 1) {
+  fatorial *= index;
+};
 
+console.log(fatorial);
 
+// Desafio de inverter palavra
+// Utilize a estrutura de repetição for para desenvolver um algoritmo que seja capaz de inverter uma palavra, como a palavra “banana” para “ananab”. 
+// Utilize a string abaixo como exemplo. Depois, troque-a por outras para verificar se seu algoritmo está funcionando corretamente.
+
+// De olho na dica 👀: Pesquise sobre os seguintes métodos: split(), reverse() e join();
+
+let word = 'trybe';
+let invertePalavra = '';
+
+invertePalavra = word.split('').reverse().join('');
+
+console.log(invertePalavra);
+
+// Desafio dos asteriscos
+// Escreva um algoritmo que, dado um valor n, sendo n > 1, imprima na tela um quadrado feito de asteriscos de tamanho n. Por exemplo:
+
+// n = 5
+
+// *****
+// *****
+// *****
+// *****
+// *****
+
+let n = 5;
+let asterisco = '*';
+let resultado = '';
+
+for (let index = 0; index < n; index += 1) {
+  resultado = resultado + asterisco;
+};
+
+for (let index = 0; index < n; index += 1) {
+  console.log(resultado);
+};
+
+//Desafio da pirâmide de asteriscos
+// Faça o mesmo algoritmo que antes, mas de modo que imprima um triângulo retângulo com 5 asteriscos de base. Por exemplo:
+
+// n = 5
+
+// *
+// **
+// ***
+// ****
+// *****
+
+let n = 5;
+let asterisco = '*';
+let resultado = '';
+
+for (let index = 0; index <= n; index += 1) {
+    resultado = resultado + asterisco;
+    console.log (resultado);
+  };
+
+//   Desafio dos asteriscos, parte 2
+// Agora, inverta o lado do triângulo. Por exemplo:
+// ❌❌❌ Resposta copiada do Gabarito:
+// Preciso entender essa questão ❌❌❌
+
+let n = 5;
+let symbol = '*';
+let inputLine = '';
+let inputPosition = n - 1;
+
+for (let lineIndex = 0; lineIndex < n; lineIndex += 1) {
+  for (let columnIndex = 0; columnIndex < n; columnIndex += 1) {
+    if (columnIndex < inputPosition) {
+      inputLine = inputLine + ' ';
+    } else {
+      inputLine = inputLine + symbol;
+    }
+  }
+  console.log(inputLine);
+  inputLine = '';
+  inputPosition -= 1;
+};
+
+// FIM
