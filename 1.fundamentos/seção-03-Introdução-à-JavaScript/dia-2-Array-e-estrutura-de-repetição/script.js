@@ -80,3 +80,60 @@ let mediaAritmetica = soma / numbers.length;
 
 console.log(mediaAritmetica);
 
+// Item 4
+
+const numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let soma = 0;
+
+for(let index = 0; index < numbers.length; index +=1) {
+    soma += numbers[index];
+}
+
+let mediaAritmetica = soma / numbers.length;
+
+if (mediaAritmetica > 20){
+    menssage = 'O valor da média aritmética é maior que 20';
+} else {
+    menssage = 'O valor da média aritmética é menor ou igual a 20';
+}
+
+console.log(menssage);
+
+// Item 5 ❌Rever questão❌
+
+const numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+
+let maiorNumero = numbers[0];
+
+for (let index = 0; index < numbers.length; index += 1) {
+  if (numbers[index] > maiorNumero) {
+    maiorNumero = numbers[index];
+  }
+};
+
+console.log(maiorNumero);
+
+// Item 6 
+// ❌❌❌ Mensagem pra mim: Rafaella esude essa questão, 
+// pois vc não entendeu direito!❌❌❌
+
+const numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+
+let result = 0;
+
+for (let index = 0; index < numbers.length; index += 1) {
+  if (numbers[index] % 2 !== 0) {
+    result += 1;
+  } 
+};
+
+if (result === 0){
+    console.log('Nenhum valor ímpar encontrado.');
+  } else {
+    console.log(result);
+  };
+
+
+
+
+
